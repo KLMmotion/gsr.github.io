@@ -189,29 +189,29 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
+            <source src="./static/videos/cardboard_box.mp4?v=2"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
+            <source src="./static/videos/coffee_machine.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
+            <source src="./static/videos/pencil_case.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
+            <source src="./static/videos/colored_cubes.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <div class="item item-blueshirt">
+        <!-- <div class="item item-blueshirt">
           <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
                     type="video/mp4">
@@ -234,7 +234,7 @@
             <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -249,13 +249,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            paragraph 1
+            Despite recent advancements, a fundamental question remains: How can embodied agents move beyond imitating human to reason about task structure, adapt to variation, and generalize across tasks?
+            Meeting this challenge requires agents to understand how the environment works, including its spatial structure, interactive objects, and their functions.
+            This requires a more effective, compact, and semantically rich representation to ground reasoning and decision-making from data.
+          <p>
+            To address this gap, we introduce <i>Grounded Scene-graph Reasoning (GSR)</i>, an embodied reasoning model built on a unified and explicit world representation. Rather than directly coupling perception to action, GSR operates over structured scene graphs that encode objects' states and spatial relations, enabling transferable physical commonsense reasoning.
+            Realizing such a capability, however, critically depends on high-quality data, which was absent in existing works. 
+            Thus, we contribute the Manip-Cognition Dataset, which comprises 36,000 action trajectories spanning on 6,000 tasks.
           </p>
           <p>
-            paragraph 2
-          </p>
-          <p>
-            paragraph 3
+            We evaluate GSR on both open-source benchmarks and real-world robotic tasks. GSR achieves 72\% and  75\% success rate in zero-shot reasoning on RLBench and LIBERO, respectively. Real-world test on a physical system across multiples daily-life tasks further demonstrate improved generalization and robust execution, under variances and human interference.
           </p>
         </div>
       </div>
