@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Your project description here">
   <meta name="keywords" content="your, keywords, here">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Project Title</title>
+  <title>WTF</title>
 
   <!-- Add own analytics if needed -->
-  
+
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -23,444 +24,666 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://github.com/KLMmotion">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://github.com/KLMmotion">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
         </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://github.com/KLMmotion">
-            A
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
           </a>
-          <a class="navbar-item" href="https://github.com/KLMmotion">
-            B
-          </a>
-          <a class="navbar-item" href="https://github.com/KLMmotion">
-            C
-          </a>
-          <a class="navbar-item" href="https://github.com/KLMmotion">
-            D
-          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/KLMmotion">
+              A
+            </a>
+            <a class="navbar-item" href="https://github.com/KLMmotion">
+              B
+            </a>
+            <a class="navbar-item" href="https://github.com/KLMmotion">
+              C
+            </a>
+            <a class="navbar-item" href="https://github.com/KLMmotion">
+              D
+            </a>
+          </div>
         </div>
       </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">GSR: Scaling Relational Embodied Reasoning for Open-World Manipulation Learning</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Kewei Hu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Michael Zhang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Wei Ying</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Tianhao Liu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Guoqiang Hao</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Zimeng Li</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Wanchan Yu</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Jiajian Jin</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Fangwen Chen</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://github.com/KLMmotion">Hanwen Kang</a><sup>1</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>KMD</span>
-            <span class="author-block"><sup>2</sup>University</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://github.com/KLMmotion"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+            <h1 class="title is-1 publication-title">GSR: Scaling Relational Embodied Reasoning for Open-World
+              Manipulation Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Kewei Hu</a><sup>1</sup>,
               </span>
-              <span class="link-block">
-                <a href="https://github.com/KLMmotion"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Michael Zhang</a><sup>1</sup>,
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://github.com/KLMmotion"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Wei Ying</a><sup>1</sup>,
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/KLMmotion"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Tianhao Liu</a><sup>1</sup>,
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/KLMmotion"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Guoqiang Hao</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Zimeng Li</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Wanchan Yu</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Jiajian Jin</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Fangwen Chen</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/KLMmotion">Hanwen Kang</a><sup>1</sup>
+              </span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>KMD</span>
+              <span class="author-block"><sup>2</sup>University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">GSR</span> blah blah blah
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="rows">
+        <div class="rows is-centered">
+          <div class="column is-centered has-text-centered">
+            <h2 class="title is-3">
+              <span class="dvima">Abstract</span>
+            </h2>
+            <div class="content has-text-justified">
+
+              <p>
+                Despite rapid progress, embodied agents still struggle with long-horizon manipulation that requires
+                maintaining spatial consistency, causal dependencies, and goal constraints. A key limitation of existing
+                approaches is that task reasoning is implicitly embedded in high-dimensional latent representations,
+                making it challenging to separate task structure from perceptual variability.
+                We introduce Grounded Scene-graph Reasoning (GSR), a structured reasoning paradigm that explicitly
+                models world-state evolution as transitions over semantically grounded scene graphs. By reasoning
+                step-wise over object states and spatial relations, rather than directly mapping perception to actions,
+                GSR enables explicit reasoning about action preconditions, consequences, and goal satisfaction in a
+                physically grounded space.
+                To support learning such reasoning, we construct Manip-Cognition-1.6M, a large-scale dataset that
+                jointly supervises scene grounding, causal action reasoning, and goal-conditioned planning. Extensive
+                evaluations across RLBench, LIBERO, GSR-benchmark, and real-world robotic tasks show that GSR
+                significantly improves zero-shot generalization and long-horizon task completion over prompting-based
+                baselines.
+                These results highlight explicit world-state representations as a key inductive bias for scalable
+                embodied reasoning.
+              </p>
+            </div>
+
+            <br>
+
+            <h2 class="title is-3">
+              <span class="dvima">Overview</span>
+            </h2>
+            <div class="content has-text-justified">
+              <p>
+                <img src="./static/images/introduction-Overall of dataset and framework.png" width="100%"
+                  alt="GSR Framework">
+                <b>Overview of GSR Framework.</b>
+                To this end, we introduce <strong>Grounded Scene-graph Reasoning (GSR)</strong>,
+                an embodied reasoning framework based on the principle that agents should plan over abstract world
+                representations rather than raw visual information.
+                GSR leverages semantically grounded scene graphs to extract stable causal structures from observations
+                and explicitly separates high-level conceptual reasoning from low-level action execution.
+                This design enables persistent and task-transferable capabilities, allowing flexible composition of
+                sequenced action and robust adaptation across tasks.
+                To train GSR, we construct the <strong>Manip-Cognition-1.6M</strong>, which provides joint supervision
+                over world understanding, intention interpretation, and action planning across a diverse set of
+                manipulation tasks.
+              </p>
+            </div>
+
+            <br>
+
+            <h2 class="title is-3">
+              <span class="dvima">Methodology</span>
+            </h2>
+            <div class="content has-text-justified">
+              <img src="./static/images/Method-Manip-Cognition dataset examples.png" width="100%" alt="GSR Framework">
+              <p>
+                Given an RGB-D observation \(\mathcal{I}\), we construct a 3D scene graph \(M_{sg} = (O_t, E_t)\) to encode
+                the workspace and object states, where \(O_t = \{o_j\}_{j=1,...,J}\) denotes the set of objects and \(E_t =
+                \{e_k\}_{k=1,...,K}\) denotes the set of relational edges.
+                Figure above illustrates the transformation process from raw visual input to a structured
+                representation and the resulting scene graph.
+                Each object \(o_j\) is represented as a structured entity composed of functional keypoints and,
+                when applicable, articulated child components.
+                For example, a <strong>mug</strong> includes a "<em>functional keypoint</em>" corresponding to its
+                <strong>handle</strong>,
+                while a <strong>cabinet</strong> is modeled as an articulated object with "<em>multiple child elements</em>"
+                such as <strong>drawers</strong>.
+                Edges \(e_k\) encode spatial relations between object pairs, capturing predicates such as <em>on</em>,
+                <em>inside</em>, or <em>adjacent</em> to (e.g., a <strong>mug</strong> <em>on</em> a <strong>table</strong>).
+              </p>
+              <p>
+                GSR is a fine-tuned Large Language Model (LLM) designed to perform commonsense reasoning over
+                scene-graph representations.
+                To apply GSR in a physical embodiment, we integrate it with a perception front-end and a action expert
+                back-end.
+                The physical system consists of two components: a perception-reasoning module for decision making, and
+                an action expert that executes low-level control.
+                The perception-reasoning module constructs scene graphs from raw observations and enable GSR reasons
+                over these information to generate sequences of actions.
+                To construct scene graphs, an <strong>Vision Foundation Model (VFM)</strong> is applied.
+                The action expert leverages a meta-skill library, with further details described in the paper.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="column is-centered">
+          <h2 class="title is-3 has-text-centered">
+            <span class="dvima">Experiments</span>
+          </h2>
+          
+          <br>
+          
+          <h2 class="title is-4">
+            <span class="dvima">Libero Benchmarks</span>
+          </h2>
+
+          <p>
+            This experiment evaluates the model's <strong>general reasoning capability</strong> in <strong>manipulation tasks without task-specific training</strong>.
+            The model must generate the <strong>command</strong> conditioned on given <strong>initial state</strong>, infer the underlying <strong>goal</strong>, and predicts the correct <strong>actions</strong>. 
+            We select five LLMs as baselines, including <code>GPT-5</code>, <code>Gemini-2.5-Pro</code>, <code>DeepSeek-V3</code>, <code>Qwen3-8B</code>, and <code>Claude-Sonnet-4.5</code>.
+            To deploy LLMs in manipulation tasks, we integrate a scene-graph–based perception module with an LLM control interface, which maps language commands to corresponding low-level actions.
+            We evaluate GSR in a zero-shot setting on RLBench and LIBERO without any fine-tuning. For the other models, we design task-specific prompts for each LLM to ensure their performance is well optimized during evaluation. 
+            On <strong>RLBench</strong>, we evaluate 100 tasks across five representative categories: <strong>Kitchen Operations (KO)</strong>, <strong>Pick and Place (PP)</strong>, <strong>Switch Operations for Containers (SC)</strong>, <strong>Controller Operations (CO)</strong>, and <strong>Stacking and Assembly (SA)</strong>.
+            On <strong>LIBERO</strong>, we evaluate 100 tasks across four subsets: <strong>LIBERO-Spatial</strong>, <strong>LIBERO-Object</strong>, <strong>LIBERO-Goal</strong>, and <strong>LIBERO-Long</strong>.
+            We run ten trials per task and report the <strong>success rate</strong>. 
+            Detailed results are reported in the accompanying tables and figures in the paper.
+          </p>
+
+          <br><br>
+
+          <div class="columns is-centered">
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 1</h4>
+                <p class="mb-3">
+                  Pick up the book and place it in the back compartment of the caddy
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source
+                    src="./static/videos/libero_10/1pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 2</h4>
+                <p class="mb-3">
+                  Put both the cream cheese box and the butter in the basket
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source
+                    src="./static/videos/libero_10/1put_both_the_cream_cheese_box_and_the_butter_in_the_basket.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 3</h4>
+                <p class="mb-3">
+                  Put the black bowl in the bottom drawer of the cabinet and close it
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source
+                    src="./static/videos/libero_10/1put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+          </div>
+
+          <br>
+
+          <div class="columns is-centered">
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 4</h4>
+                <p class="mb-3">
+                  Put the white mug on the plate and put the chocolate pudding to the right of the plate
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source
+                    src="./static/videos/libero_10/1put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 5</h4>
+                <p class="mb-3">
+                  Put the yellow and white mug in the microwave and close it
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source
+                    src="./static/videos/libero_10/1put_the_yellow_and_white_mug_in_the_microwave_and_close_it.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 6</h4>
+                <p class="mb-3">
+                  Turn on the stove and put the moka pot on it
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/libero_10/1turn_on_the_stove_and_put_the_moka_pot_on_it.mp4"
+                    type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+          </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="column is-centered">
+          <h2 class="title is-4">
+            <span class="dvima">GSR Benchmarks</span>
+          </h2>
+
+          <p>
+            <strong>GSR-Bench</strong> evaluates long-horizon task reasoning under both spatial and semantic constraints. 
+            It consists of 180 tasks, with an average planning horizon exceeding 10 steps. 
+            Our evaluation focuses on three aspects: 
+            <strong>(1) Semantic Object Disambiguation (SOD)</strong>, which assesses reasoning under varying object semantics; 
+            <strong>(2) Spatial-Aware Sequencing (SAS)</strong>, which evaluates reasoning over physical causality and spatial constraints; 
+            and <strong>(3) Goal-conditioned Generalization (GCG)</strong>, which measures reasoning across diverse abstract goals. 
+            For each aspect, we define three difficulty levels: <em>easy</em>, <em>medium</em>, and <em>difficult</em>
+          </p>
+          
+          <br><br>
+
+          <div class="columns is-centered">
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 1</h4>
+                <p class="mb-3">
+                  GSR Object general
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/GSR/11.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 2</h4>
+                <p class="mb-3">
+                  GSR Object difficult
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/GSR/22.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 3</h4>
+                <p class="mb-3">
+                  GSR Spatial general
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/GSR/33.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+          </div>
+
+          <br>
+
+          <div class="columns is-centered">
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 4</h4>
+                <p class="mb-3">
+                  GSR Spatial difficult
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/GSR/44.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 5</h4>
+                <p class="mb-3">
+                  GSR Goal general
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/GSR/55.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 6</h4>
+                <p class="mb-3">
+                  GSR Goal difficult
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/GSR/66.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+          </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="column is-centered">
+          <h2 class="title is-4">
+            <span class="dvima">Real World Results</span>
+          </h2>
+          
+          <br><br>
+          
+          <div class="columns is-centered">
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 1</h4>
+                <p class="mb-3">
+                  
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/cardboard_box.mp4?v=2" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 2</h4>
+                <p class="mb-3">
+                  
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/coffee_machine.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+          </div>
+
+          <br>
+
+          <div class="columns is-centered">
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 3</h4>
+                <p class="mb-3">
+                  
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/pencil_case.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 4</h4>
+                <p class="mb-3">
+                  
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/colored_cubes.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="hero is-light is-small">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">GSR</span> does ???
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cardboard_box.mp4?v=2"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee_machine.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pencil_case.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/colored_cubes.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!-- <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Despite recent advancements, a fundamental question remains: How can embodied agents move beyond imitating human to reason about task structure, adapt to variation, and generalize across tasks?
-            Meeting this challenge requires agents to understand how the environment works, including its spatial structure, interactive objects, and their functions.
-            This requires a more effective, compact, and semantically rich representation to ground reasoning and decision-making from data.
-          <p>
-            To address this gap, we introduce <i>Grounded Scene-graph Reasoning (GSR)</i>, an embodied reasoning model built on a unified and explicit world representation. Rather than directly coupling perception to action, GSR operates over structured scene graphs that encode objects' states and spatial relations, enabling transferable physical commonsense reasoning.
-            Realizing such a capability, however, critically depends on high-quality data, which was absent in existing works. 
-            Thus, we contribute the Manip-Cognition Dataset, which comprises 36,000 action trajectories spanning on 6,000 tasks.
-          </p>
-          <p>
-            We evaluate GSR on both open-source benchmarks and real-world robotic tasks. GSR achieves 72\% and  75\% success rate in zero-shot reasoning on RLBench and LIBERO, respectively. Real-world test on a physical system across multiples daily-life tasks further demonstrate improved generalization and robust execution, under variances and human interference.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=31VpE0Hgdg9HQs8a"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Description
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">???</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              Description
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/27fd8a98b429b4da01da2684373b05d0.mp4"
-                      type="video/mp4">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">
+          <span class="dvima">Real World Results</span>
+        </h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/cardboard_box.mp4?v=2" type="video/mp4">
             </video>
           </div>
-
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/coffee_machine.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/pencil_case.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/colored_cubes.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
+  </section> -->
 
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{park2021nerfies,
   author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021},
 }</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">static/videos/libero_10/1put_both_the_cream_cheese_box_an
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

@@ -155,3 +155,20 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* make video blocks same-height and align videos to bottom */
+.columns.is-centered > .column .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.columns.is-centered > .column .content h3.title {
+    margin-bottom: 0.5rem;
+    min-height: 3.5rem; /* keep title area consistent */
+}
+.columns.is-centered > .column .content video {
+    margin-top: auto; /* push video to bottom */
+    width: 100%;
+    height: auto;
+    max-height: 240px; /* adjust as needed */
+}
