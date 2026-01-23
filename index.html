@@ -6,23 +6,18 @@
   <meta name="description" content="Your project description here">
   <meta name="keywords" content="your, keywords, here">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WTF</title>
+  <title>GSR: Learning Structured Reasoning for Embodied Manipulation</title>
 
   <!-- Add own analytics if needed -->
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/your-favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 
   <script>
@@ -82,8 +77,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">GSR: Scaling Relational Embodied Reasoning for Open-World
-              Manipulation Learning</h1>
+            <h1 class="title is-1 publication-title">GSR: Learning Structured Reasoning for Embodied Manipulation</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://github.com/KLMmotion">Kewei Hu</a><sup>1</sup>,
@@ -142,14 +136,14 @@
                   </a>
                 </span>
                 <!-- Video Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
                     <span>Video</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/KLMmotion" class="external-link button is-normal is-rounded is-dark">
@@ -167,6 +161,7 @@
                     </span>
                     <span>Data</span>
                   </a>
+                </span>
               </div>
 
             </div>
@@ -251,7 +246,7 @@
             </h2>
             <div class="content has-text-justified">
               <img src="./static/images/Method-Manip-Cognition dataset examples.png" width="100%" alt="GSR Framework">
-              <p>
+              <p class="has-text-justified">
                 Given an RGB-D observation \(\mathcal{I}\), we construct a 3D scene graph \(M_{sg} = (O_t, E_t)\) to encode
                 the workspace and object states, where \(O_t = \{o_j\}_{j=1,...,J}\) denotes the set of objects and \(E_t =
                 \{e_k\}_{k=1,...,K}\) denotes the set of relational edges.
@@ -266,7 +261,7 @@
                 Edges \(e_k\) encode spatial relations between object pairs, capturing predicates such as <em>on</em>,
                 <em>inside</em>, or <em>adjacent</em> to (e.g., a <strong>mug</strong> <em>on</em> a <strong>table</strong>).
               </p>
-              <p>
+              <p class="has-text-justified">
                 GSR is a fine-tuned Large Language Model (LLM) designed to perform commonsense reasoning over
                 scene-graph representations.
                 To apply GSR in a physical embodiment, we integrate it with a perception front-end and a action expert
@@ -295,7 +290,7 @@
             <span class="dvima">Libero Benchmarks</span>
           </h2>
 
-          <p>
+          <p class="has-text-justified">
             This experiment evaluates the model's <strong>general reasoning capability</strong> in <strong>manipulation tasks without task-specific training</strong>.
             The model must generate the <strong>command</strong> conditioned on given <strong>initial state</strong>, infer the underlying <strong>goal</strong>, and predicts the correct <strong>actions</strong>. 
             We select five LLMs as baselines, including <code>GPT-5</code>, <code>Gemini-2.5-Pro</code>, <code>DeepSeek-V3</code>, <code>Qwen3-8B</code>, and <code>Claude-Sonnet-4.5</code>.
@@ -423,7 +418,7 @@
             <span class="dvima">GSR Benchmarks</span>
           </h2>
 
-          <p>
+          <p class="has-text-justified">
             <strong>GSR-Bench</strong> evaluates long-horizon task reasoning under both spatial and semantic constraints. 
             It consists of 180 tasks, with an average planning horizon exceeding 10 steps. 
             Our evaluation focuses on three aspects: 
@@ -537,7 +532,12 @@
           <h2 class="title is-4">
             <span class="dvima">Real World Results</span>
           </h2>
-          
+          <p class="has-text-justified">
+            This experiment evaluates GSR in three real-world settings, each targeting a distinct aspect of its reasoning and generalization capabilities. 
+            First, we assess GSR on general pick-and-place tasks involving common objects, evaluating its reasoning ability to generate appropriate behaviors in response to natural language commands. 
+            Second, we evaluate GSR on long-horizon sorting tasks as in GSR-Bench, examining its performance across diverse spatial configurations and goal conditions that require extended planning. 
+            Third, we demonstrate GSR on four daily-life tasks, detailed results are shown in the supplementary videos.
+          </p>
           <br><br>
           
           <div class="columns is-centered">
@@ -568,11 +568,7 @@
               </div>
             </div>
             <!-- /video -->
-          </div>
 
-          <br>
-
-          <div class="columns is-centered">
             <!-- video -->
             <div class="column">
               <div class="content">
@@ -581,12 +577,17 @@
                   
                 </p>
                 <video id="id" autoplay controls muted loop playsinline height="100%">
-                  <source src="./static/videos/pencil_case.mp4" type="video/mp4">
+                  <source src="./static/videos/fe94bf1a5c3bafaa3d01f0661eb8ffc2.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
             <!-- /video -->
 
+          </div>
+
+          <br>
+
+          <div class="columns is-centered">
             <!-- video -->
             <div class="column">
               <div class="content">
@@ -600,44 +601,41 @@
               </div>
             </div>
             <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 5</h4>
+                <p class="mb-3">
+                  
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/pencil_case.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
+            <!-- video -->
+            <div class="column">
+              <div class="content">
+                <h4 class="title is-5">Task 6</h4>
+                <p class="mb-3">
+                  
+                </p>
+                <video id="id" autoplay controls muted loop playsinline height="100%">
+                  <source src="./static/videos/ded80fc322f0736cd7b213921ba2038d.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- /video -->
+
           </div>
 
         </div>
       </div>
     </div>
   </section>
-
-  <!-- <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3 has-text-centered">
-          <span class="dvima">Real World Results</span>
-        </h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/cardboard_box.mp4?v=2" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/coffee_machine.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-shiba">
-            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/pencil_case.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/colored_cubes.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
 
   <section class="section" id="BibTeX">
