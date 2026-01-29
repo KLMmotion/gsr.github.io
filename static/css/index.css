@@ -145,10 +145,25 @@ body {
     box-sizing: inherit;
 }
 
-#teaser,
+#teaser {
+    display: block;
+    margin: 0 auto;
+    width: 900px !important;
+    max-width: 100%;
+    height: auto !important;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.columns.is-centered > .column {
+    padding: 2px;
+}
+
 .columns.is-centered > .column .content video,
 .columns.is-centered > .column video {
     border-radius: 12px;
+    padding: 2px;
     overflow: hidden; /* ensures children respect the radius */
     display: block;
     object-fit: cover; /* optional: keeps aspect while filling */
@@ -156,4 +171,6 @@ body {
 
 .mb-3 {
   font-weight: bold;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
 }
