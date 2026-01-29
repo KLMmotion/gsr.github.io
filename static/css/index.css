@@ -124,19 +124,25 @@ body {
 }
 
 .title.is-3 {
+    position: relative; /* <-- add this */
     font-family: 'Lexend', sans-serif;
 }
 
 .title.is-3::after {
-  content: ''; 
-  position: absolute; 
-  bottom: -10px; 
-  left: 50%; 
-  transform: translateX(-50%);
-  width: 64px; 
-  height: 4px; 
-  background: var(--primary); 
-  border-radius: 2px;
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 4px;
+    background: #4a90e2;
+    border-radius: 2px;
+    display: block;
+    z-index: 1;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
 }
 
 #teaser,
